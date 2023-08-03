@@ -1,0 +1,155 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Huynh Duc Gia Tin
+ID: 3962053
+Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,600;0,700;0,800;1,300;1,400&display=swap');
+
+:root {
+    --main-color: #1A4419;
+    --second-color: #000;
+    --third-color: #fff;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* style the header and the nav bar, make sure that ít is:
+ - responsive
+ - manga aesthetic
+ - Primary colors are black and white, you can add some beautiful matching color to add aesthetic to the website
+ - minimal
+ - add beautiful and professional animations
+ - Beautifully organized and neat, logically structured. 
+ Here's the code:     <header class="header">
+        <a href="./homepage.html" class="header__logo">
+            <img src="../Common assets/Images/logopng.png" alt="Otaku Universe Logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav--list">
+                <li><a href="./homepage.html">Home</a></li>
+                <li><a href="./homepage.html">Manga</a></li>
+                <li><a href="./homepage.html">Light Novels</a></li>
+            </ul>
+        </nav>
+        <div class="header__search">
+            <form action="#" class="header__search--form">
+                <input type="text" class="header__search--input" placeholder="Search...">
+                <button class="header__search--button">
+                    <img src="../Common assets/Images/Search_icon.png" alt="Search Icon" width="30px">
+                </button>
+            </form>
+        </div>
+        <div class="header__user">
+            <a href="./homepage.html" class="header__user--login">Login</a>
+            <a href="./homepage.html" class="header__user--signup">Sign Up</a>
+        </div>
+    </header> */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 10vh;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.header__logo img {
+    width: 5rem;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav--list li {
+    margin-left: 2rem;
+}
+
+.header__nav--list li a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header__nav--list li a:hover {
+    color: var(--main-color);
+}
+
+.header__search--form {
+    display: flex;
+    align-items: center;
+}
+
+.header__search--input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.header__search--button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__search--button img {
+    width: 2rem;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+}
+
+.header__user--login,
+
+.header__user--signup {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+.header__user--login:hover,
+
+.header__user--signup:hover {
+    color: var(--main-color);
+}
+
+
+
+
+
