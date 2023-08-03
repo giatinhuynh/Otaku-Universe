@@ -12,16 +12,20 @@ Acknowledgement: .
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Otaku Universe</title>
-    <link rel="icon" href="../Common assets/Images/iconwhitepng.png">
+    <title>Homepage | Otaku Universe</title>    
+    <link rel="icon" href="../Common assets/Images/OtakuUniverseIcon.png">
     <link rel="stylesheet" href="./style_for_homepage.css"> 
 </head>
+
+
 <body>
-    <!-- recommend my the nav bar, what should I put it to make it perfect as a nav bar for a bookstore, add a buy now button too-->
+
+
     <header class="header">
         <a href="./homepage.html" class="header__logo">
-            <img src="../Common assets/Images/logopng.png" alt="Otaku Universe Logo">
+            <img src="../Common assets/Images/OtakuUniverseLogo.png" alt="Otaku Universe Logo">
         </a>
+
         <nav class="header__nav">
             <ul class="header__nav--list">
                 <li><a href="./homepage.html">Home</a></li>
@@ -29,45 +33,100 @@ Acknowledgement: .
                 <li><a href="./homepage.html">Light Novels</a></li>
             </ul>
         </nav>
-        <div class="header__search">
-            <form action="#" class="header__search--form">
-                <input type="text" class="header__search--input" placeholder="Search...">
-                <button class="header__search--button">
-                    <img src="../Common assets/Images/Search_icon.png" alt="Search Icon" width="30px">
-                </button>
-            </form>
-        </div>
+
     </header>
+
+
     <main class="main">
+
+
         <section class="main__intro">
-            <h1>Welcome to Otaku Universe!</h1>
-            <p>Here you can find all the information you need about the world of anime and manga!</p>
+            <h1>Welcome to <span>Otaku Universe!</span></h1>
+            <p>Here you can find all the information you need about the world of manga and light novels!</p>
             <p>Click on the categories above to start exploring!</p>
             <p>You are new? Watch these videos!</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-cXIcyfPJ_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qQNqHE8XOZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section class="main__intro--videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qQNqHE8XOZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-cXIcyfPJ_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
         </section>
+
+
         <section class="main__categories">
+
             <section class="main__categories--manga">
-                <a href="#"><h1>Manga</h1></a>
-                <ul>
-                    <li><a href="#">book1</a></li>
-                    <li><a href="#">book2</a></li>
-                    <li><a href="#">book3</a></li>
-                    <li><a href="#">book4</a></li>
-                </ul>
+                <h1><a href="#">Manga</a></h1>
+                <div class="categories__container">
+                    <div class="container__item">
+                        <div class="container__item--photo">
+                            <img src="../Common assets/Images/cover1.jpg" alt="cover1">
+                        </div>
+                        <div class="container__item--detail">
+                            <h2><a href="#">Manga 1</a></h2>
+                            <p>$11.59</p>
+                        </div>
+                    </div>
+                    <div class="container__item">
+                        <div class="container__item--photo">
+                            <img src="../Common assets/Images/cover1.jpg" alt="cover1">
+                        </div>
+                        <div class="container__item--detail">
+                            <h2><a href="#">Manga 1</a></h2>
+                            <p>$11.59</p>
+                        </div>
+                    </div>
+                    <div class="container__item">
+                        <div class="container__item--photo">
+                            <img src="../Common assets/Images/cover1.jpg" alt="cover1">
+                        </div>
+                        <div class="container__item--detail">
+                            <h2><a href="#">Manga 1</a></h2>
+                            <p>$11.59</p>
+                        </div>
+                    </div>
+                </div>
             </section>
+
             <section class="main__categories--lightnovels">
-                <a href="#"><h1>Light Novels</h1></a>
-                <ul>
-                    <li><a href="#">book1</a></li>
-                    <li><a href="#">book2</a></li>
-                    <li><a href="#">book3</a></li>
-                    <li><a href="#">book4</a></li>
-                </ul>
+                <h1><a href="#">Light Novels</a></h1>
+                <div class="categories__container">
+                    <div class="container__item">
+                        <div class="container__item--photo">
+                            <img src="../Common assets/Images/cover1.jpg" alt="cover1">
+                        </div>
+                        <div class="container__item--detail">
+                            <h2><a href="#">Manga 1</a></h2>
+                            <p>$11.59</p>
+                        </div>
+                    </div>
+                    <div class="container__item">
+                        <div class="container__item--photo">
+                            <img src="../Common assets/Images/cover1.jpg" alt="cover1">
+                        </div>
+                        <div class="container__item--detail">
+                            <h2><a href="#">Manga 1</a></h2>
+                            <p>$11.59</p>
+                        </div>
+                    </div>
+                    <div class="container__item">
+                        <div class="container__item--photo">
+                            <img src="../Common assets/Images/cover1.jpg" alt="cover1">
+                        </div>
+                        <div class="container__item--detail">
+                            <h2><a href="#">Manga 1</a></h2>
+                            <p>$11.59</p>
+                        </div>
+                    </div>
+                </div>
             </section>
+
         </section>
+
+
     </main>
+
+
+
     <footer class="footer">
         <nav class="footer__nav">
             <ul class="footer__nav-list">
