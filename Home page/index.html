@@ -14,63 +14,64 @@ Acknowledgement: .
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage | Otaku Universe</title>    
-    <link rel="icon" href="../Common assets/Images/OtakuUniverseIconBlack.png">
-    <link rel="stylesheet" href="./style_for_homepage.css"> 
+    <link rel="icon" href="../Common assets/Images/OtakuUniverseIconGradient.png">
+    <link rel="stylesheet" href="./style.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 
 <body>
 
-    <div class="header__gradientborder"></div>
-
     <header class="header">
-        <a href="./homepage.html" class="header__logo">
-            <div class="header__logo--icon">
-                <img src="../Common assets/Images/OtakuUniverseIconBlack.png" alt="Otaku Universe Logo">
-            </div>
-            <div class="header__logo--text">
-                <h1>Otaku</h1>
-                <h1>Universe</h1>
-            </div>
-        </a>
+        <div class="header__content">
+            <a href="./homepage.html" class="header__logo">
+                <div class="header__logo--icon">
+                    <img src="../Common assets/Images/OtakuUniverseIconGradient.png" alt="Otaku Universe Logo">
+                </div>
+                <div class="header__logo--text">
+                    <h1>Otaku</h1>
+                    <h1>Universe</h1>
+                </div>
+            </a>
 
-        <nav class="header__nav">
-            <ul class="header__nav--list">
-                <li><a href="./homepage.html">Home</a></li>
-                <li><a href="./homepage.html">Manga</a></li>
-                <li><a href="./homepage.html">Light Novels</a></li>
-            </ul>
-        </nav>
+            <nav class="header__nav">
+                <ul class="header__nav--list">
+                    <li><a href="./homepage.html">Home</a></li>
+                    <li><a href="./homepage.html">Manga</a></li>
+                    <li><a href="./homepage.html">Light Novels</a></li>
+                </ul>
+            </nav>
 
-        <div class="header__function">
-            <div class="header__function--favourite">
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        favorite
-                        </span>
-                </a>
-            </div>
+            <div class="header__function">
+                <div class="header__function--favourite">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                    </a>
+                </div>
 
-            <div class="header__function--cart">
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        shopping_cart_checkout
-                        </span>
-                </a>
-            </div>
+                <div class="header__function--cart">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart_checkout
+                            </span>
+                    </a>
+                </div>
 
-            <div class="header__function--search">
-                <button class="header__search--button">
-                    <span class="material-symbols-outlined">search</span>
-                </button>
-                <form action="#" class="header__search--form">
-                    <input type="text" class="header__search--input" placeholder="Search...">
-                </form>
+                <div class="header__function--search">
+                    <button class="header__search--button">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                    <form action="#" class="header__search--form">
+                        <input type="text" class="header__search--input" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="header__gradient-border">
+                    
+                </div>
             </div>
         </div>
-
-
     </header>
 
 
@@ -167,28 +168,10 @@ Acknowledgement: .
 
 <footer class="footer">
     
-    <!-- <section class="footer__overview">
-        <a href="./homepage.html" class="footer__overview--logo">
-            <div class="footer__logo--icon">
-                <img src="../Common assets/Images/OtakuUniverseIconWhite.png" alt="Otaku Universe Logo">
-            </div>
-            <div class="footer__logo--text">
-                <h1>Otaku</h1>
-                <h1>Universe</h1>
-            </div>
-        </a>
-        </section>
-    </section> -->
-
     <div class="footer__container"> 
-        <!-- Navigation Links -->
-        <section class="footer__aboutus">
-            <h4>About Us</h4>
-            <p>Your one-stop shop for manga, light novels, and everything otaku! Explore our collection and join our community today.</p>
-        </section>
 
         <nav class="footer__nav">
-            <h4>Quick Links</h4>
+            <h4 class="footer__section--title">Quick Links</h4>
             <ul class="footer__nav-list">
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="privacypolicy.html">Privacy Policy</a></li>
@@ -199,31 +182,32 @@ Acknowledgement: .
 
         <!-- Contact Information -->
         <section class="footer__contact">
-            <h4>Contact Us</h4>
-            <address>
+            <h4 class="footer__section--title">Contact Us</h4>
+            <address class="footer__contact--info">
                 123 Wolf Street, Ur Mom<br>
                 Phone: 123-456-7890<br>
                 Email: <a href="mailto:support@otakuuniverse.com">support@otakuuniverse.com</a>
             </address>
-            <a href="#" class="social-icon"><img src="../Common assets/Images/facebook-icon-white.png" alt="Facebook"></a>
-            <a href="#" class="social-icon"><img src="../Common assets/Images/instagram-icon-white.png" alt="Instagram"></a>
         </section>
-
-
 
         <!-- Newsletter Subscription -->
         <section class="footer__subscribe">
-            <h4>Subscribe to Our Newsletter</h4>
-            <form action="/subscribe" method="post">
+            <h4 class="footer__section--title">Subscribe to Our Newsletter</h4>
+            <form action="" method="">
                 <input type="email" name="email" placeholder="Enter your email">
                 <button type="submit">Subscribe</button>
             </form>
         </section>
     </div>
+
     
-    <!-- Copyright -->
+    <div class="footer__social-media">
+        <a href="#" class="footer__social-media--logo"><img src="../Common assets/Images/facebook-icon-white.png" alt="Facebook"></a>
+        <a href="#" class="footer__social-media--logo"><img src="../Common assets/Images/instagram-icon-white.png" alt="Instagram"></a>
+    </div>
+
     <div class="footer__copyright">
-        <p>&copy; 2023 Otaku Universe. All Rights Reserved. Designed By Huynh Duc Gia Tin</p>
+        <p>&copy; 2023 Otaku Universe. All Rights Reserved. Designed By <span>Huynh Duc Gia Tin</span></p>
     </div>
 </footer>
 
