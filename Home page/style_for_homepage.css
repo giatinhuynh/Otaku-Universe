@@ -29,6 +29,25 @@ Acknowledgement: Acknowledge the resources that you use here.
     border-bottom: 2px solid #9C27B0;
 }
 
+.header__gradientborder {
+    /* Make this class appear behind the header */
+    height: 92px;
+    width: 100%;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: -1;
+}
+
+.header__gradientborder::before,
+.header__gradientborder::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    z-index: 0;
+}
+
+
 .header__logo {
     display: flex;
     align-items: center;
