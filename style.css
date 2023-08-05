@@ -23,6 +23,8 @@ Acknowledgement: Acknowledge the resources that you use here.
 /*Make the header appear on top of the header gradientborder*/
 .header {
     position: relative;
+    width: 100%;
+    top:0;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -168,105 +170,6 @@ Acknowledgement: Acknowledge the resources that you use here.
     background-clip: text;
     -webkit-background-clip: text;
 }
-
-
-/* Main styling */
-.main {
-    color: #000;
-    background-color: #fff;
-    line-height: 1.6;
-}
-
-.main__intro {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.main__intro h1 {
-    margin-top: 20px;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.main__intro p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.main__intro h1 span {
-    background: linear-gradient(90deg, #2196F3, #9C27B0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline; /* Needed to keep the gradient effect within the text */
-}
-
-.main__intro h2 span {
-    background: linear-gradient(90deg, #2196F3, #9C27B0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline; /* Needed to keep the gradient effect within the text */
-}
-
-.main__intro iframe {
-    max-width: 100%;
-    margin: 15px ;
-}
-
-.main__intro--videos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-top: 40px;
-}
-
-.main__categories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-
-.main__categories--manga,
-.main__categories--lightnovels {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.main__categories--manga h1,
-.main__categories--lightnovels h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-
-.main__categories--manga a,
-.main__categories--lightnovels a {
-    text-decoration: none;
-    color: #000;
-    transition: color 0.3s;
-}
-
-.main__categories--manga a:hover,
-.main__categories--lightnovels a:hover {
-    color: #000;
-}
-
-.categories__container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 
 /* Footer styling */
 .footer {
@@ -467,4 +370,207 @@ Acknowledgement: Acknowledge the resources that you use here.
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline; /* Needed to keep the gradient effect within the text */
+}
+
+
+/* Main styling */
+.main {
+    color: #000;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+
+/* Main__intro styling */
+.main__intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__intro::before {
+    content: '';
+    background-image: url('Assets/Homepage/Main_intro_background.jpg');
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+}
+
+.main__intro--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 90%;
+}
+
+.main__intro--text{
+    position: sticky;
+    top: 25%;
+    background: #fff;
+    padding: 20px 35px;
+    border-radius: 25px;
+    margin-bottom: 25%;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 1);
+}
+
+.main__intro--text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 15px;
+    isolation: isolate;
+
+}
+
+.main__intro--text h2, .main__intro--text a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    isolation: isolate;
+}
+
+.main__intro--text h1 div.typewriter{
+    border-right: .15rem solid #2196F3; /* Cursor effect */
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 3.5s,
+        blink-caret .75s step-end infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+.main__intro--text h2 div.typewriter {
+    border-right: .15rem solid #2196F3; /* Cursor effect */
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing2 3s,
+        blink-caret .75s step-end infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+
+.main__intro--text h1 div.typewriter span, .main__intro--text h2 div.typewriter span {
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline; /* Needed to keep the gradient effect within the text */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes typing2 {
+    from { width: 0 }
+    to { width: 63% }
+}
+/* Cursor animations */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2196F3 }
+    75% { border-color: #9C27B0 }
+}
+
+
+
+.main__intro--btn a {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);   
+}
+
+.main__intro--btn a:hover {
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: transparent;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__beginner iframe {
+    max-width: 100%;
+    margin: 15px ;
+}
+
+.main__beginner--videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+
+.main__categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.main__categories--manga,
+.main__categories--lightnovels {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main__categories--manga h1,
+.main__categories--lightnovels h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.main__categories--manga a,
+.main__categories--lightnovels a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.main__categories--manga a:hover,
+.main__categories--lightnovels a:hover {
+    color: #000;
+}
+
+.categories__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
