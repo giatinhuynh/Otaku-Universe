@@ -8,25 +8,27 @@ ID: 3962053
 Acknowledgement: .
 -->
 
+<!-- Start of HTML Document -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Otaku Universe</title>    
-    <link rel="icon" href="../Assets/Common/OtakuUniverseIconGradient.png">
-    <link rel="stylesheet" href="../style.css"> 
+    <title>Manga | Otaku Universe</title>    
+    <link rel="icon" href="../../Assets/Common/otaku_universe_logo.png">
+    <link rel="stylesheet" href="../../style.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-
 <body>
-
+    <!-- Start of Header Section -->
     <header class="header">
         <div class="header__content">
-            <a href="index.html" class="header__logo">
+
+            <!-- Logo and Brand Name -->
+            <a href="../../index.html" class="header__logo">
                 <div class="header__logo--icon">
-                    <img src="../index.html" alt="Otaku Universe Logo">
+                    <img src="../../Assets/Common/otaku_universe_logo.png" alt="Otaku Universe Logo">
                 </div>
                 <div class="header__logo--text">
                     <h1>Otaku</h1>
@@ -34,14 +36,16 @@ Acknowledgement: .
                 </div>
             </a>
 
+            <!-- Navigation Links -->
             <nav class="header__nav">
                 <ul class="header__nav--list">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="manga.html">Manga</a></li>
-                    <li><a href="light novels.html">Light Novels</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../Pages/Categories/category_manga.html">Manga</a></li>
+                    <li><a href="../../Pages/Categories/category_light _novels.html">Light Novels</a></li>
                 </ul>
             </nav>
 
+            <!-- Functionalities: Favorite, Cart and Search -->
             <div class="header__function">
                 <div class="header__function--favourite">
                     <a href="#">
@@ -67,33 +71,45 @@ Acknowledgement: .
             </div>
         </div>
     </header>
+    <!-- End of Header Section -->
 
-
+    <!-- Main Content of the page -->
     <main class="main">
-        
-        <h1>Manga</h1>
 
+
+        <!-- Categories of Manga: Adventure, Action, Psychological, Dark Fantasy-->
         <section class="main__categories">
 
-            <section class="main__categories--manga">
+            <!--Main category title-->
+            <div class="main__title">
+                <h1>Manga</h1>
+            </div>
 
+            <!-- Adventure Manga Section  -->
+            <section class="main__categories--adventure">
+
+                <!-- Adventure Manga Title -->
                 <div class="categories__title">
-                    <a href="/Pages/manga.html">Manga</a>
+                    <a href="/Pages/Categories/category_manga.html">Adventure</a>
                 </div>
 
+                <!-- Adventure Manga Content -->
                 <div class="categories__container">
 
-                    
+                    <!-- Adventure Manga Item 1 -->
                     <div class="categories__item">
+                        <!-- Adventure Manga Cover -->
                         <div class="categories__item--photo">
                             <img src="Assets/Homepage/Manga_OnePiece.jpg" alt="One Piece Vol.100">
                         </div>
+                        <!-- Adventure Manga Details -->
                         <div class="categories__item--detail">
                             <h2><a href="#">One Piece Vol.100</a></h2>
                             <p class="categories__item--author">Eiichiro Oda</p>
                             <p class="categories__item--price">$7.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Adventure Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -108,16 +124,20 @@ Acknowledgement: .
                         </div>
                     </div>
 
+                    <!-- Adventure Manga Item 2 -->
                     <div class="categories__item">
+                        <!-- Adventure Manga Cover -->
                         <div class="categories__item--photo">
                             <img src="Assets/Homepage/Manga_Naruto.jpg" alt="Naruto Vol.1">
                         </div>
+                        <!-- Adventure Manga Details -->
                         <div class="categories__item--detail">
                             <h2><a href="#">Naruto Vol.1</a></h2>
                             <p class="categories__item--author">Mashashi Kishimoto</p>
                             <p class="categories__item--price">$9.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Adventure Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -132,16 +152,20 @@ Acknowledgement: .
                         </div>
                     </div>
 
+                    <!-- Adventure Manga Item 3 -->
                     <div class="categories__item">
+                        <!-- Adventure Manga Cover -->
                         <div class="categories__item--photo">
                             <img src="Assets/Homepage/Manga_DragonBall.jpg" alt="Dragon Ball Vol.1">
                         </div>
+                        <!-- Adventure Manga Details -->
                         <div class="categories__item--detail">
                             <h2><a href="#">Dragon Ball Vol.1</a></h2>
                             <p class="categories__item--author">Akira Toriyama</p>
                             <p class="categories__item--price">$9.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Adventure Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -156,16 +180,20 @@ Acknowledgement: .
                         </div>
                     </div>
 
+                    <!-- Adventure Manga Item 4 -->
                     <div class="categories__item">
+                        <!-- Adventure Manga Cover -->
                         <div class="categories__item--photo">
                             <img src="Assets/Homepage/Manga_Bleach.jpg" alt="Bleach Vol.1">
                         </div>
+                        <!-- Adventure Manga Details -->
                         <div class="categories__item--detail">
                             <h2><a href="#">Bleach Vol.1</a></h2>
                             <p class="categories__item--author">Eiichiro Oda</p>
                             <p class="categories__item--price">$9.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Adventure Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -179,33 +207,35 @@ Acknowledgement: .
                             </a>
                         </div>
                     </div>
-
-                    
-
-
                 </div>
             </section>
+            <!-- End of Adventure Manga Section  -->
 
-            <section class="main__categories--LN">
+            <!-- Action Manga Section  -->
+            <section class="main__categories--action">
 
+                <!-- Action Manga Title -->
                 <div class="categories__title">
-                    <a href="/Pages/manga.html">Light Novels</a>
+                    <a href="/Pages/Categories/category_manga.html">Action</a>
                 </div>
-                
+
+                <!-- Action Manga Content -->
                 <div class="categories__container">
 
-                    
+                    <!-- Action Manga Item 1 -->
                     <div class="categories__item">
+                        <!-- Action Manga Cover -->
                         <div class="categories__item--photo">
-                            <img src="Assets/Homepage/LN_SAO.jpg" alt="SAO Vol.1">
+                            <img src="Assets/Homepage/Manga_OnePiece.jpg" alt="One Piece Vol.100">
                         </div>
+                        <!-- Action Manga Details -->
                         <div class="categories__item--detail">
-                            <h2><a href="#">Sword Art Online Vol.1</a></h2>
-                            <p class="categories__item--author">Reki Kawahara</p>
-                            <p class="categories__item--price">$11.29</p>
-
+                            <h2><a href="#">One Piece Vol.100</a></h2>
+                            <p class="categories__item--author">Eiichiro Oda</p>
+                            <p class="categories__item--price">$7.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Action Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -220,17 +250,20 @@ Acknowledgement: .
                         </div>
                     </div>
 
+                    <!-- Action Manga Item 2 -->
                     <div class="categories__item">
+                        <!-- Action Manga Cover -->
                         <div class="categories__item--photo">
-                            <img src="Assets/Homepage/LN_NGNL.jpg" alt="NGNL Vol.1">
+                            <img src="Assets/Homepage/Manga_Naruto.jpg" alt="Naruto Vol.1">
                         </div>
+                        <!-- Action Manga Details -->
                         <div class="categories__item--detail">
-                            <h2><a href="#">No Game No Life Vol.1</a></h2>
-                            <p class="categories__item--author">Yuu Kamiya</p>
-                            <p class="categories__item--price">$12.99</p>
-
+                            <h2><a href="#">Naruto Vol.1</a></h2>
+                            <p class="categories__item--author">Mashashi Kishimoto</p>
+                            <p class="categories__item--price">$9.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Action Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -245,18 +278,20 @@ Acknowledgement: .
                         </div>
                     </div>
 
-
+                    <!-- Action Manga Item 3 -->
                     <div class="categories__item">
+                        <!-- Action Manga Cover -->
                         <div class="categories__item--photo">
-                            <img src="Assets/Homepage/LN_Overlord.jpg" alt="Overlord Vol.1">
+                            <img src="Assets/Homepage/Manga_DragonBall.jpg" alt="Dragon Ball Vol.1">
                         </div>
+                        <!-- Action Manga Details -->
                         <div class="categories__item--detail">
-                            <h2><a href="#">Overlord Vol.1</a></h2>
-                            <p class="categories__item--author">Kugane Maruyama</p>
-                            <p class="categories__item--price">$19.64</p>
-
+                            <h2><a href="#">Dragon Ball Vol.1</a></h2>
+                            <p class="categories__item--author">Akira Toriyama</p>
+                            <p class="categories__item--price">$9.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Action Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -271,17 +306,20 @@ Acknowledgement: .
                         </div>
                     </div>
 
-
+                    <!-- Action Manga Item 4 -->
                     <div class="categories__item">
+                        <!-- Action Manga Cover -->
                         <div class="categories__item--photo">
-                            <img src="Assets/Homepage/LN_ClassroomOfTheElite.jpg" alt="COTE Vol.1">
+                            <img src="Assets/Homepage/Manga_Bleach.jpg" alt="Bleach Vol.1">
                         </div>
+                        <!-- Action Manga Details -->
                         <div class="categories__item--detail">
-                            <h2><a href="#">Classroom Of the Elite Vol.1</a></h2>
-                            <p class="categories__item--author">Syougo Kinugasa</p>
-                            <p class="categories__item--price">$12.59</p>
+                            <h2><a href="#">Bleach Vol.1</a></h2>
+                            <p class="categories__item--author">Eiichiro Oda</p>
+                            <p class="categories__item--price">$9.99</p>
                         </div>
                         <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Action Manga Functionalities -->
                         <div class="categories__item--function">
                             <a href="#" class="categories__item--btn">
                                 <span class="material-symbols-outlined">
@@ -295,25 +333,148 @@ Acknowledgement: .
                             </a>
                         </div>
                     </div>
-
-
-
-                    
+                </div>
             </section>
+            <!-- End of Action Manga Section  -->
+
+            <!-- Psychological Manga Section  -->
+            <section class="main__categories--psychological">
+
+                <!-- Psychological Manga Title -->
+                <div class="categories__title">
+                    <a href="/Pages/Categories/category_manga.html">Psychological</a>
+                </div>
+
+                <!-- Psychological Manga Content -->
+                <div class="categories__container">
+
+                    <!-- Psychological Manga Item 1 -->
+                    <div class="categories__item">
+                        <!-- Psychological Manga Cover -->
+                        <div class="categories__item--photo">
+                            <img src="Assets/Homepage/Manga_OnePiece.jpg" alt="One Piece Vol.100">
+                        </div>
+                        <!-- Psychological Manga Details -->
+                        <div class="categories__item--detail">
+                            <h2><a href="#">One Piece Vol.100</a></h2>
+                            <p class="categories__item--author">Eiichiro Oda</p>
+                            <p class="categories__item--price">$7.99</p>
+                        </div>
+                        <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Psychological Manga Functionalities -->
+                        <div class="categories__item--function">
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </a>
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Psychological Manga Item 2 -->
+                    <div class="categories__item">
+                        <!-- Psychological Manga Cover -->
+                        <div class="categories__item--photo">
+                            <img src="Assets/Homepage/Manga_Naruto.jpg" alt="Naruto Vol.1">
+                        </div>
+                        <!-- Psychological Manga Details -->
+                        <div class="categories__item--detail">
+                            <h2><a href="#">Naruto Vol.1</a></h2>
+                            <p class="categories__item--author">Mashashi Kishimoto</p>
+                            <p class="categories__item--price">$9.99</p>
+                        </div>
+                        <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Psychological Manga Functionalities -->
+                        <div class="categories__item--function">
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </a>
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Psychological Manga Item 3 -->
+                    <div class="categories__item">
+                        <!-- Psychological Manga Cover -->
+                        <div class="categories__item--photo">
+                            <img src="Assets/Homepage/Manga_DragonBall.jpg" alt="Dragon Ball Vol.1">
+                        </div>
+                        <!-- Psychological Manga Details -->
+                        <div class="categories__item--detail">
+                            <h2><a href="#">Dragon Ball Vol.1</a></h2>
+                            <p class="categories__item--author">Akira Toriyama</p>
+                            <p class="categories__item--price">$9.99</p>
+                        </div>
+                        <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Psychological Manga Functionalities -->
+                        <div class="categories__item--function">
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </a>
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Psychological Manga Item 4 -->
+                    <div class="categories__item">
+                        <!-- Psychological Manga Cover -->
+                        <div class="categories__item--photo">
+                            <img src="Assets/Homepage/Manga_Bleach.jpg" alt="Bleach Vol.1">
+                        </div>
+                        <!-- Psychological Manga Details -->
+                        <div class="categories__item--detail">
+                            <h2><a href="#">Bleach Vol.1</a></h2>
+                            <p class="categories__item--author">Eiichiro Oda</p>
+                            <p class="categories__item--price">$9.99</p>
+                        </div>
+                        <a href="#" class="categories__item--btn">More Details</a>
+                        <!-- Psychological Manga Functionalities -->
+                        <div class="categories__item--function">
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                            </a>
+                            <a href="#" class="categories__item--btn">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Psychological Manga Section  -->
 
         </section>
-
-
-
+        <!-- End of Manga Categories Section  -->
+    </section>
 
     </main>
+    <!-- End of Main Content  -->
 
-
-
-<footer class="footer">
-    
+<!-- Footer  -->
+<footer class="footer">    
     <div class="footer__container"> 
 
+        <!-- Footer Navigation -->
         <nav class="footer__nav">
             <h4 class="footer__section--title">Quick Links</h4>
             <ul class="footer__nav-list">
@@ -344,16 +505,18 @@ Acknowledgement: .
         </section>
     </div>
 
-    
+    <!-- Social Media -->
     <div class="footer__social-media">
-        <a href="#" class="footer__social-media--logo"><img src="../Assets/Common/facebook-icon-white.png" alt="Facebook"></a>
-        <a href="#" class="footer__social-media--logo"><img src="../Assets/Common/instagram-icon-white.png" alt="Instagram"></a>
+        <a href="#" class="footer__social-media--logo"><img src="../../Assets/Common/facebook_logo.png" alt="Facebook"></a>
+        <a href="#" class="footer__social-media--logo"><img src="../../Assets/Common/instagram_logo.png" alt="Instagram"></a>
     </div>
 
+    <!-- Copy Right -->
     <div class="footer__copyright">
         <p>&copy; 2023 Otaku Universe. All Rights Reserved. Designed By <span>Huynh Duc Gia Tin</span></p>
     </div>
-</footer>
 
+</footer>
+<!-- End of Footer  -->
 </body>
 </html>
