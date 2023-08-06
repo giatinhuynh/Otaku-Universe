@@ -388,7 +388,6 @@ Acknowledgement: Acknowledge the resources that you use here.
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-around;
     align-items: center;
 }
@@ -413,9 +412,9 @@ Acknowledgement: Acknowledge the resources that you use here.
     position: sticky;
     top: 25%;
     background: #fff;
-    padding: 20px 35px;
+    padding: 30px 35px;
     border-radius: 25px;
-    margin-bottom: 25%;
+    margin-bottom: 35%;
     box-shadow: 0px 15px 20px rgba(145, 92, 182, 1);
 }
 
@@ -482,7 +481,11 @@ Acknowledgement: Acknowledge the resources that you use here.
     75% { border-color: #9C27B0 }
 }
 
-
+.main__intro--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .main__intro--btn a {
     display: inline-block;
@@ -495,6 +498,8 @@ Acknowledgement: Acknowledge the resources that you use here.
     font-weight: 700;
     letter-spacing: 1px;
     background: linear-gradient(90deg, #2196F3, #9C27B0);   
+    margin: unset;
+    margin-bottom: 10px;
 }
 
 .main__intro--btn a:hover {
@@ -515,22 +520,83 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 
 
+.main__beginner {
+    background-color: #fff; /* Light gray background for distinction */
+    padding: 20px 0; /* Top and bottom padding for spacing */
+    text-align: center; /* To center the introductory text */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 15px; /* Rounded corners for a soft look */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px 30px;
+    border-bottom: 2px solid #f2f2f2;
+    margin-bottom: 20px;
+}
 
+.main__beginner--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main__beginner--text h1{
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+    color: #333; 
+    font-weight: 700;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline; /* Needed to keep the gradient effect within the text */
+}
 
-
+.main__beginner--text h2{
+    font-size: 1.5rem; 
+    color: #333; 
+    font-weight: 700;
+    display: inline; /* Needed to keep the gradient effect within the text */
+}
 
 .main__beginner iframe {
     max-width: 100%;
-    margin: 15px ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* A shadow to make the iframes stand out a bit */
+    border-radius: 10px; /* Soft rounded corners for the videos */
+    transition: transform 0.2s; /* Smooth transition for hover effect below */
+}
+
+.main__beginner iframe:hover {
+    transform: scale(1.05); /* Slightly enlarge videos on hover for interactive feel */
 }
 
 .main__beginner--videos {
+    margin-top: 20px;
+    padding: 0 10%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    margin-top: 40px;
+    margin-bottom: 45px;
+    gap: 30px; /* To provide spacing between the iframes */
 }
+
+
+.main__beginner--videos .main__beginner--manga {
+    align-self: flex-start;
+}
+
+.main__beginner--videos .main__beginner--LN {
+    align-self: flex-end;
+}
+
+
+
+
+
+
+
+
 
 .main__categories {
     display: flex;
@@ -541,14 +607,13 @@ Acknowledgement: Acknowledge the resources that you use here.
 }
 
 .main__categories--manga,
-.main__categories--lightnovels {
+.main__categories--LN {
     width: 100%;
-    padding: 20px;
     margin-bottom: 20px;
 }
 
 .main__categories--manga h1,
-.main__categories--lightnovels h1 {
+.main__categories--LN h1 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 15px;
@@ -557,20 +622,48 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 
 .main__categories--manga a,
-.main__categories--lightnovels a {
+.main__categories--LN a {
     text-decoration: none;
     color: #000;
     transition: color 0.3s;
 }
 
-.main__categories--manga a:hover,
-.main__categories--lightnovels a:hover {
-    color: #000;
-}
 
-.categories__container {
+.manga__container,
+.LN__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
 }
+
+.main__categories--manga {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Assets/Homepage/test.jpg);
+    background-blend-mode: multiply;
+}
+
+/* .main__catgegories--manga {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url(Assets/Homepage/test.jpg);
+}
+.main__categories--manga::before {
+    content: ''; 
+    background-image: url(Assets/Homepage/test.jpg); 
+    opacity: 0.6; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; 
+} */
+
