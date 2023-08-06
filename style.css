@@ -32,6 +32,8 @@ Acknowledgement: Acknowledge the resources that you use here.
     padding: 15px 30px;
     background-color: #fff;
     font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 1000;
 }
 
 .header__content {
@@ -62,7 +64,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 .header__logo--text h1 {
     font-weight: 700;
-    font-size: 20px; /* Adjust as needed */
+    font-size: 1.5rem; /* Adjust as needed */
     margin: 0;
     line-height: 1.2;
 }
@@ -102,7 +104,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 .header__nav--list a {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #000;
     position: relative;
@@ -211,7 +213,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 .footer__section--title {
     font-weight: 700;
-    font-size: 22px; /* Bigger size */
+    font-size: 1.6rem; /* Bigger size */
     margin-bottom: 15px;
     position: relative;
     cursor: pointer;
@@ -247,7 +249,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 .footer__nav-list a {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #fff;
     position: relative;
@@ -285,7 +287,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 }
 
 .footer__contact .footer__contact--info {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -298,7 +300,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 .footer__contact a,
 .footer__subscribe button {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #fff;
     transition: color 0.3s ease;
 }
@@ -328,7 +330,7 @@ Acknowledgement: Acknowledge the resources that you use here.
     outline: none;
     width: 100%; /* Full width within the form */
     margin-bottom: 10px; /* Spacing between input and button */
-    font-size: 16px; /* Larger font for readability */
+    font-size: 1.2rem; /* Larger font for readability */
 }
 
 .footer__subscribe button {
@@ -339,7 +341,7 @@ Acknowledgement: Acknowledge the resources that you use here.
     cursor: pointer;
     transition: background 0.3s ease;
     border-radius: 5px;
-    font-size: 16px; /* Consistent font size */
+    font-size: 1rem; /* Consistent font size */
     width: 100%; /* Full width for the button */
     text-align: center; /* Centering the button text */
 }
@@ -362,7 +364,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 .footer__copyright {
     text-align: center;
     padding: 10px 0 0 0;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .footer__copyright p span {
@@ -394,7 +396,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 .main__intro::before {
     content: '';
-    background-image: url('Assets/Homepage/Main_intro_background.jpg');
+    background-image: url('Assets/Homepage/Intro-background.jpg');
     position: absolute;
     inset: 0;
     opacity: 0.6;
@@ -520,6 +522,9 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 
 
+
+
+
 .main__beginner {
     background-color: #fff; /* Light gray background for distinction */
     padding: 20px 0; /* Top and bottom padding for spacing */
@@ -531,7 +536,6 @@ Acknowledgement: Acknowledge the resources that you use here.
     flex-direction: column;
     padding:20px 30px;
     border-bottom: 2px solid #f2f2f2;
-    margin-bottom: 20px;
 }
 
 .main__beginner--text {
@@ -609,61 +613,181 @@ Acknowledgement: Acknowledge the resources that you use here.
 .main__categories--manga,
 .main__categories--LN {
     width: 100%;
-    margin-bottom: 20px;
-}
-
-.main__categories--manga h1,
-.main__categories--LN h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-
-.main__categories--manga a,
-.main__categories--LN a {
-    text-decoration: none;
-    color: #000;
-    transition: color 0.3s;
-}
-
-
-.manga__container,
-.LN__container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.main__categories--manga {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(Assets/Homepage/test.jpg);
-    background-blend-mode: multiply;
-}
-
-/* .main__catgegories--manga {
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-image: url(Assets/Homepage/test.jpg);
+    height: 650px;
 }
-.main__categories--manga::before {
+
+.main__categories--manga::before,
+.main__categories--LN::before {
     content: ''; 
-    background-image: url(Assets/Homepage/test.jpg); 
-    opacity: 0.6; 
+    opacity: 0.4; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0; 
-} */
+    z-index: 0;
+    background-size: cover;
+}
+
+.main__categories--manga::before {
+    background-image: url(Assets/Homepage/Manga-background.jpeg);
+}
+
+.main__categories--LN::before {
+    background-image: url(Assets/Homepage/LN-background.jpg);
+}
+
+.main__categories--LN > *,
+.main__categories--manga > * {
+    position: relative; 
+    z-index: 1;
+}
+
+.categories__title a {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #fff;   
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.7);
+}
+
+.categories__title a:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.categories__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 70vh;
+}
+
+.categories__item {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 25px;
+    margin: auto 20px;
+    text-align: center;
+}
+
+.categories__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.4);
+}
+
+.categories__item--photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.categories__item--photo img {
+    width: 70%;
+    height: auto;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.categories__item--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.categories__item--detail h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.categories__item--detail h2 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.categories__item--detail h2 a:hover {
+    color: #9C27B0;
+}
+
+.categories__item--author {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+.categories__item--price {
+    font-size: 16px;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.categories__item--function {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.categories__item--btn,
+.categories__item--function .categories__item--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    margin: 5px 0;
+}
+
+.categories__item--btn:hover,
+.categories__item--function .categories__item--btn:hover {
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.4);
+}
+
+.categories__item--function .categories__item--btn {
+    border-radius: 50%; 
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+}
 
