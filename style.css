@@ -29,11 +29,12 @@ Acknowledgement: Acknowledge the resources that you use here.
     justify-content: space-between;
     align-items: stretch;
     flex-direction: column;
-    padding: 15px 30px;
+    padding: 15px 15px;
     background-color: #fff;
     font-family: 'Inter', sans-serif;
     position: relative;
     z-index: 1000;
+    align-self: center;
 }
 
 /* Layout for header's internal content */
@@ -156,6 +157,10 @@ Acknowledgement: Acknowledge the resources that you use here.
     margin-left: 25px;
 }
 
+.header__function--favourite a {
+    margin-left: 0;
+}
+
 /* Hover effects for favourite and cart icons */
 .header__function--favourite a:hover,
 .header__function--cart a:hover{
@@ -216,12 +221,12 @@ Acknowledgement: Acknowledge the resources that you use here.
     box-sizing: border-box;
 }
 
-.footer__aboutus,
 .footer__nav,
 .footer__contact,
 .footer__subscribe {
     flex: 1 0 20%;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .footer__section--title {
@@ -236,7 +241,7 @@ Acknowledgement: Acknowledge the resources that you use here.
 .footer__section--title::after {
     content: '';
     position: absolute;
-    bottom: -5px; 
+    bottom: -2px; 
     left: 0;
     width: 0; 
     height: 2px;
@@ -395,6 +400,8 @@ Acknowledgement: Acknowledge the resources that you use here.
 }
 
 
+
+
 /*-------------Homepage styling-------------*/
 
 /* Main styling */
@@ -413,6 +420,7 @@ Acknowledgement: Acknowledge the resources that you use here.
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 0 50px;
 }
 
 .main__intro::before {
@@ -424,11 +432,14 @@ Acknowledgement: Acknowledge the resources that you use here.
 }
 
 .main__intro--wrapper {
+    /*i want this to appear on top of the background image*/ 
+    position: relative;   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     height: 90%;
+    margin-left: 55px;
 }
 
 .main__intro--text{
@@ -802,8 +813,7 @@ Acknowledgement: Acknowledge the resources that you use here.
     background-color: #2196F3;
 }
 
-/*-------------Main categories:Manga, Light Novels pages styling-------------*/
-
+/*-------------Styling for Manga categories page and Light novel categories page-------------*/
 
 .main__title {
     display: flex;
@@ -898,3 +908,8 @@ Acknowledgement: Acknowledge the resources that you use here.
     position: relative; 
     z-index: 1;
 }
+
+/*-------------Styling for book details page-------------*/
+
+/* Main styling */
+
