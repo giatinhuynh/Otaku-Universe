@@ -142,50 +142,6 @@ Acknowledgement: Acknowledge the resources that you use here.
     -webkit-background-clip: text;
 }
 
-/* Styling for header functionalities like favourite, cart, search */
-.header__function {
-    display: flex;
-    align-items: center;
-}
-
-.header__function--favourite a,
-.header__function--cart a,
-.header__function--search button {
-    font-size: 24px;
-    color: #000;
-    transition: color 0.3s ease;
-    margin-left: 25px;
-}
-
-.header__function--favourite a {
-    margin-left: 0;
-}
-
-/* Hover effects for favourite and cart icons */
-.header__function--favourite a:hover,
-.header__function--cart a:hover{
-    color: transparent;
-    background: linear-gradient(90deg, #2196F3, #9C27B0);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-
-.header__function--search button {
-    font-size: 24px;
-    color: #000;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.header__function--search button:hover {
-    color: transparent;
-    background: linear-gradient(90deg, #2196F3, #9C27B0);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
 
 /*-------------footer styling-------------*/
 
@@ -420,7 +376,6 @@ Acknowledgement: Acknowledge the resources that you use here.
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0 50px;
 }
 
 .main__intro::before {
@@ -439,7 +394,6 @@ Acknowledgement: Acknowledge the resources that you use here.
     align-items: center;
     justify-content: start;
     height: 90%;
-    margin-left: 55px;
 }
 
 .main__intro--text{
@@ -911,5 +865,190 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 /*-------------Styling for book details page-------------*/
 
-/* Main styling */
+/* Styling for the book details main section. */
+.book-detail__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Breadcrumb styling. */
+
+.main__breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    padding: 0 20px;
+}
+.main__breadcrumb a{
+    align-self: flex-start;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-left: 10px;
+}
+
+.main__breadcrumb a:hover {
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__breadcrumb p{
+    margin-left: 10px;
+}
+
+/* Styling for the book details section. */
+.main__book-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin-bottom: 50px;
+    padding: 50px 90px;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.4);
+    border-radius: 50px;
+}
+
+/* Styling for the book details image. */
+.book-detail__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.book-detail__image--sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin-top: 16px;
+}
+
+.book-detail__image--main {
+    width: 350px;   
+    object-fit: cover;
+    border-radius: 50px;
+    margin-right: 45px;
+}
+
+.book-detail__image--sub img {
+    width: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.book-detail__image--main, 
+.book-detail__image--sub img {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.book-detail__image--main:hover,
+.book-detail__image--sub img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the book info. */
+.book-detail__info {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 50%;
+}
+
+/* Styling for the book title and description details */
+.book-detail__info--title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.book-detail__info--author,
+.book-detail__info--genre,
+.book-detail__info--rating,
+.book-detail__info--price,
+.book-detail__info--quantity {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+/* Styling for the add to cart button */
+.book-detail__info--button {
+    align-self: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #2196F3, #9C27B0); ; 
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.book-detail__info--button:hover {
+    background: linear-gradient(90deg, #2196F3, #9C27B0); ; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.4);
+    
+}
+
+/* Styling for the book description */
+.main__book-description{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    margin-bottom: 50px;
+    padding: 50px 90px;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.4);
+    border-radius: 50px;
+}
+
+.main__book-description h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* I want this to line to cover the whole width, not just the text., use this linear-gradient(90deg, #2196F3, #9C27B0); */
+.main__book-description hr {
+    width: 100%;
+    height: 3px;
+    border: none;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    margin-top: 20px;
+}
+
+.main__book-description--title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+}
+
+.main__book-description--content {
+    font-size: 1.3rem;
+    color: #000;
+    margin-top: 30px;
+}
 
