@@ -1116,14 +1116,13 @@ Acknowledgement: Acknowledge the resources that you use here.
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .contact__field--checkbox-option,
 .contact__newsletter--radio-option {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -1160,7 +1159,12 @@ Acknowledgement: Acknowledge the resources that you use here.
     margin-right: 10px;
 }
 
-
+.contact__actions button:hover {
+    background: linear-gradient(90deg, #2196F3, #9C27B0); ; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.4);
+}
 
 
 
