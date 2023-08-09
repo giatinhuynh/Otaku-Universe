@@ -1052,3 +1052,115 @@ Acknowledgement: Acknowledge the resources that you use here.
     margin-top: 30px;
 }
 
+/*-------------Styling for contact page-------------*/
+
+.contact__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__main h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #2196F3, #9C27B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;    
+}
+
+.contact__main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    background: #fff;
+    margin-bottom: 50px;
+    padding: 40px 70px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 20px rgba(145, 92, 182, 0.5);
+}
+
+.contact__field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.contact__field label,
+.contact__field span {
+    font-size: 1.3rem;
+    width: 55%;
+}
+
+.contact__field input,
+.contact__field textarea,
+.contact__field select {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contact__field--checkbox,
+.contact__newsletter--radio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact__field--checkbox-option,
+.contact__newsletter--radio-option {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.contact__field--checkbox,
+.contact__newsletter--radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact__field--checkbox label,
+.contact__newsletter--radio label {
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.contact__actions {
+    margin-top: 20px;
+}
+
+.contact__actions button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #2196F3, #9C27B0); ; 
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+
+
+
+

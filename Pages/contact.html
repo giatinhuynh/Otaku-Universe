@@ -52,9 +52,86 @@ Acknowledgement: .
     <!-- Main Content of the page -->
     <main class="main">
 
+        <!-- Contact Us Main Content -->
         <div class="contact__main">
-            
+
+            <!-- Contact Us Heading -->
+            <h1 class="contact__heading">Contact Us</h1>
+
+            <!-- Contact Form -->
+            <form class="contact__form" action="#" method="#">
+
+                <!-- Contact Purpose Dropdown -->
+                <div class="contact__field">
+                    <label for="contact__field--purpose">Contact Purpose</label>
+                    <select id="contact__field--purpose" name="contactPurpose" required>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
+
+                <!-- Name Input -->
+                <div class="contact__field">
+                    <label for="contact__field--name">Name</label>
+                    <input type="text" id="contact__field--name" name="name" required>
+                </div>
+
+                <!-- Email Input -->
+                <div class="contact__field">
+                    <label for="contact__field--email">Email</label>
+                    <input type="email" id="contact__field--email" name="email" required>
+                </div>
+
+                <!-- Phone Input -->
+                <div class="contact__field">
+                    <label for="contact__field--phone">Phone</label>
+                    <input type="tel" id="contact__field--phone" name="phone" required>
+                </div>
+
+                <!-- Contact Preference Checkboxes -->
+                <div class="contact__field">
+                    <span>Contact Preference</span>
+                    <div class="contact__field--checkbox">
+                            <div class="contact__field--checkbox-option">
+                            <label for="contact__preference--byemail">By email</label>
+                            <input type="checkbox" id="contact__preference--byemail" name="contactPref" value="email">
+                            </div>
+                            <div class="contact__field--checkbox-option">
+                            <label for="contact__preference--byphone">By phone</label>
+                            <input type="checkbox" id="contact__preference--byphone" name="contactPref" value="phone">
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Receive Weekly Newsletter Radio Buttons -->
+                <div class="contact__field">
+                    <span>Receive Weekly Newsletter?</span>
+                    <div class="contact__newsletter--radio">
+                        <div class="contact__newsletter--radio-option">
+                            <label for="contact__newsletter--yes">Yes</label>
+                            <input type="radio" id="contact__newsletter--yes" name="newsletter" value="yes" checked>
+                        </div>
+                        <div class="contact__newsletter--radio-option">
+                            <label for="contact__newsletter--no">No</label>
+                            <input type="radio" id="contact__newsletter--no" name="newsletter" value="no">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Notes Textarea -->
+                <div class="contact__field">
+                    <label for="contact__extranotes">Extra Notes</label>
+                    <textarea id="contact__extranotes" name="notes" rows="4" cols="50"></textarea>
+                </div>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="contact__actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
         </div>
+
 
     </main>
     <!-- End of Main Content  -->
