@@ -1127,19 +1127,22 @@ Acknowledgement: Acknowledge the resources that you use here.
 }
 
 
-.contact__field--checkbox,
-.contact__newsletter--radio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact__field--checkbox label,
+.contact__newsletter--radio label {
+    font-size: 1rem;
     width: 100%;
 }
 
 .contact__field--checkbox label,
 .contact__newsletter--radio label {
     font-size: 1rem;
+    width: 35%;
+}
+
+.contact__field--checkbox-option input,
+.contact__newsletter--radio-option input {
+    width: 10%;
     margin-right: 10px;
-    width: 100%;
 }
 
 .contact__actions {
