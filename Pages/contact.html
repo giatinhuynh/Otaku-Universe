@@ -14,7 +14,7 @@ Acknowledgement: .
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece Vol.100 | Otaku Universe</title>    
+    <title>Contact Us | Otaku Universe</title>    
     <link rel="icon" href="../../Assets/Common/otaku_universe_logo.png">
     <link rel="stylesheet" href="../../style.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -26,9 +26,9 @@ Acknowledgement: .
         <div class="header__content">
 
             <!-- Logo and Brand Name -->
-            <a href="../../index.html" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <div class="header__logo--icon">
-                    <img src="../../Assets/Common/otaku_universe_logo.png" alt="Otaku Universe Logo">
+                    <img src="Assets/Common/otaku_universe_logo.png" alt="Otaku Universe Logo">
                 </div>
                 <div class="header__logo--text">
                     <h1>Otaku</h1>
@@ -39,9 +39,28 @@ Acknowledgement: .
             <!-- Navigation Links -->
             <nav class="header__nav">
                 <ul class="header__nav--list">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../Pages/Categories/category_manga.html">Manga</a></li>
-                    <li><a href="../../Pages/Categories/category_light _novels.html">Light Novels</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/Pages/Categories/category_manga.html">Manga</a></li>
+                    <li><a href="/Pages/Categories/category_light _novels.html">Light Novels</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navigation Toggle Button for responsive design -->
+
+            <!-- Checkbox to control the visibility of the dropdown menu -->
+            <input type="checkbox" id="header__nav--dropdown-toggle" class="header__nav--dropdown-toggle">
+
+            <!-- Navigation Toggle Button (now a label for the checkbox) -->
+            <label for="header__nav--dropdown-toggle" class="header__nav--dropdown-toggle-hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Navigation Dropdown Menu -->
+            <nav class="header__nav-dropdown">
+                <ul class="header__nav--list-dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/Pages/Categories/category_manga.html">Manga</a></li>
+                    <li><a href="/Pages/Categories/category_light _novels.html">Light Novels</a></li>
                 </ul>
             </nav>
             
@@ -63,7 +82,7 @@ Acknowledgement: .
 
                 <!-- Contact Purpose Dropdown -->
                 <div class="contact__field">
-                    <label for="contact__field--purpose">Contact Purpose</label>
+                    <label for="contact__field--purpose">Contact Purpose:</label>
                     <select id="contact__field--purpose" name="contactPurpose" required>
                         <option value="sell">I want to sell books</option>
                         <option value="buy">I want to buy books</option>
@@ -72,25 +91,25 @@ Acknowledgement: .
 
                 <!-- Name Input -->
                 <div class="contact__field">
-                    <label for="contact__field--name">Name</label>
+                    <label for="contact__field--name">Name:</label>
                     <input type="text" id="contact__field--name" name="name" required>
                 </div>
 
                 <!-- Email Input -->
                 <div class="contact__field">
-                    <label for="contact__field--email">Email</label>
+                    <label for="contact__field--email">Email:</label>
                     <input type="email" id="contact__field--email" name="email" required>
                 </div>
 
                 <!-- Phone Input -->
                 <div class="contact__field">
-                    <label for="contact__field--phone">Phone</label>
+                    <label for="contact__field--phone">Phone:</label>
                     <input type="tel" id="contact__field--phone" name="phone" required>
                 </div>
 
                 <!-- Contact Preference Checkboxes -->
                 <div class="contact__field">
-                    <span>Contact Preference</span>
+                    <span>Contact Preference:</span>
                     <div class="contact__field--checkbox">
                             <div class="contact__field--checkbox-option">
                                 <input type="checkbox" id="contact__preference--byemail" name="contactPref" value="email">
@@ -120,7 +139,7 @@ Acknowledgement: .
 
                 <!-- Extra Notes Textarea -->
                 <div class="contact__field">
-                    <label for="contact__extranotes">Extra Notes</label>
+                    <label for="contact__extranotes">Extra Notes:</label>
                     <textarea id="contact__extranotes" name="notes" rows="4" cols="50"></textarea>
                 </div>
 
@@ -140,26 +159,29 @@ Acknowledgement: .
     <footer class="footer">    
         <div class="footer__container"> 
 
-            <!-- Footer Navigation -->
-            <nav class="footer__nav">
-                <h4 class="footer__section--title">Quick Links</h4>
-                <ul class="footer__nav-list">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="Pages/contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <!-- Footer Nav and Contact information-->
+            <div class="footer__nav-and-contact">
+                <!-- Footer Navigation -->
+                <nav class="footer__nav">
+                    <h4 class="footer__section--title">Quick Links</h4>
+                    <ul class="footer__nav-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="./Pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
 
-            <!-- Contact Information -->
-            <section class="footer__contact">
-                <h4 class="footer__section--title">Our Contact</h4>
-                <address class="footer__contact--info">
-                    420 Akihabara, Tokyo<br>
-                    Phone: 261-22-0469<br>
-                    Email: <a href="mailto:support@otakuuniverse.com">support@otakuuniverse.com</a>
-                </address>
-            </section>
+                <!-- Contact Information -->
+                <section class="footer__contact">
+                    <h4 class="footer__section--title">Our Contact</h4>
+                    <address class="footer__contact--info">
+                        420 Akihabara, Tokyo<br>
+                        Phone: 261-22-0469<br>
+                        Email: <a href="mailto:support@otakuuniverse.com">support@otakuuniverse.com</a>
+                    </address>
+                </section>
+            </div>
 
             <!-- Newsletter Subscription -->
             <section class="footer__subscribe">
@@ -173,8 +195,8 @@ Acknowledgement: .
 
         <!-- Social Media -->
         <div class="footer__social-media">
-            <a href="#" class="footer__social-media--logo"><img src="../../Assets/common/facebook_logo.png" alt="Facebook"></a>
-            <a href="#" class="footer__social-media--logo"><img src="../../Assets/common/instagram_logo.png" alt="Instagram"></a>
+            <a href="#" class="footer__social-media--logo"><img src="../Assets/common/facebook_logo.png" alt="Facebook"></a>
+            <a href="#" class="footer__social-media--logo"><img src="../Assets/common/instagram_logo.png" alt="Instagram"></a>
         </div>
 
         <!-- Copy Right -->
