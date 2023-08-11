@@ -15,7 +15,7 @@ Acknowledgement: .
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece Vol.100 | Otaku Universe</title>    
-    <link rel="icon" href="../../Assets/Common/otaku_universe_logo.png">
+    <link rel="icon" href="../../Assets/common/otaku_universe_logo.png">
     <link rel="stylesheet" href="../../style.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -28,7 +28,7 @@ Acknowledgement: .
             <!-- Logo and Brand Name -->
             <a href="../../index.html" class="header__logo">
                 <div class="header__logo--icon">
-                    <img src="../../Assets/Common/otaku_universe_logo.png" alt="Otaku Universe Logo">
+                    <img src="../../Assets/common/otaku_universe_logo.png" alt="Otaku Universe Logo">
                 </div>
                 <div class="header__logo--text">
                     <h1>Otaku</h1>
@@ -36,15 +36,24 @@ Acknowledgement: .
                 </div>
             </a>
 
-            <!-- Navigation Links -->
+            <!-- Navigation Section-->
             <nav class="header__nav">
+                <!-- Checkbox for the dropdown menu -->
+                <input type="checkbox" id="header__nav--dropdown-toggle" class="header__nav--dropdown-toggle" hidden>
+
+                <!-- Hamburger Icon -->
+                <div class="header__nav--hamburger">
+                    <label for="header__nav--dropdown-toggle"></label>
+                </div>
+
+                <!--Navigation Links-->
                 <ul class="header__nav--list">
                     <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../Pages/Categories/category_manga.html">Manga</a></li>
-                    <li><a href="../../Pages/Categories/category_light _novels.html">Light Novels</a></li>
+                    <li><a href="../Categories/category_manga.html">Manga</a></li>
+                    <li><a href="../Categories/category_light _novels.html _novels.html">Light Novels</a></li>
                 </ul>
             </nav>
-            
+
         </div>
     </header>
     <!-- End of Header Section -->
@@ -57,11 +66,11 @@ Acknowledgement: .
             <div class="main__breadcrumb">
                 <a href="../../index.html">Home </a>
                 <p>></p>
-                <a href="../../Pages/Categories/category_manga.html">Manga</a>
+                <a href="../Categories/category_manga.html">Manga</a>
                 <p>></p>
-                <a href="../../Pages/Categories/category_manga.html">Adventure</a>
+                <a href="../Categories/category_manga.html">Adventure</a>
                 <p>></p>
-                <a href="../../Pages/Books/one_piece_vol_100.html">One Piece Vol.100</a>
+                <a href="./one_piece_vol_100.html">One Piece Vol.100</a>
             </div>
 
 
@@ -103,7 +112,7 @@ Acknowledgement: .
     </main>
     <!-- End of Main Content  -->
 
-    <!-- Footer  -->
+    <!-- Start of Footer section  -->
     <footer class="footer">    
         <div class="footer__container"> 
 
@@ -116,7 +125,7 @@ Acknowledgement: .
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms</a></li>
-                        <li><a href="./Pages/contact.html">Contact Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
 

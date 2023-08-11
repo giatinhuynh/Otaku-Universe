@@ -28,7 +28,7 @@ Acknowledgement: .
             <!-- Logo and Brand Name -->
             <a href="../../index.html" class="header__logo">
                 <div class="header__logo--icon">
-                    <img src="../../Assets/Common/otaku_universe_logo.png" alt="Otaku Universe Logo">
+                    <img src="../../Assets/common/otaku_universe_logo.png" alt="Otaku Universe Logo">
                 </div>
                 <div class="header__logo--text">
                     <h1>Otaku</h1>
@@ -36,12 +36,21 @@ Acknowledgement: .
                 </div>
             </a>
 
-            <!-- Navigation Links -->
+            <!-- Navigation Section-->
             <nav class="header__nav">
+                <!-- Checkbox for the dropdown menu -->
+                <input type="checkbox" id="header__nav--dropdown-toggle" class="header__nav--dropdown-toggle" hidden>
+
+                <!-- Hamburger Icon -->
+                <div class="header__nav--hamburger">
+                    <label class="header__nav--hamburger-label" for="header__nav--dropdown-toggle"></label>
+                </div>
+
+                <!--Navigation Links-->
                 <ul class="header__nav--list">
                     <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../Pages/Categories/category_manga.html">Manga</a></li>
-                    <li><a href="../../Pages/Categories/category_light _novels.html">Light Novels</a></li>
+                    <li><a href="./category_manga.html">Manga</a></li>
+                    <li><a href="./category_light _novels.html _novels.html">Light Novels</a></li>
                 </ul>
             </nav>
 
@@ -446,7 +455,7 @@ Acknowledgement: .
     </main>
     <!-- End of Main Content  -->
 
-    <!-- Footer  -->
+    <!-- Start of Footer section  -->
     <footer class="footer">    
         <div class="footer__container"> 
 
@@ -459,7 +468,7 @@ Acknowledgement: .
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms</a></li>
-                        <li><a href="./Pages/contact.html">Contact Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
 
