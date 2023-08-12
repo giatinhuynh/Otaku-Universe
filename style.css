@@ -633,11 +633,11 @@ Acknowledgement: Acknowledge the resources that you use here.
 }
 
 .main__categories--manga::before {
-    background-image: url(Assets/homepage/Manga-background.jpeg);
+    background-image: url(./Assets/Homepage/Manga-background.jpeg);
 }
 
 .main__categories--LN::before {
-    background-image: url(Assets/homepage/LN-background.jpg);
+    background-image: url(./Assets/Homepage/LN-background.jpg);
 }
 
 .main__categories--LN > *,
@@ -863,27 +863,27 @@ Acknowledgement: Acknowledge the resources that you use here.
 
 /* Background images for the categories section. */
 .main__categories--adventure::before {
-    background-image: url(Assets/category_manga/Adventure-Background.jpg);
+    background-image: url(./Assets/category_manga/Adventure-Background.jpg);
 }
 
 .main__categories--action::before {
-    background-image: url(Assets/category_manga/Action-background.jpg);
+    background-image: url(./Assets/category_manga/Action-background.jpg);
 }
 
 .main__categories--psychological::before {
-    background-image: url(Assets/category_manga/Psychological-background.png);
+    background-image: url(./Assets/category_manga/Psychological-background.png);
 }
 
 .main__categories--isekai::before {
-    background-image: url(Assets/category_light_novels/Isekai-background.png);
+    background-image: url(./Assets/category_light_novels/Isekai-background.png);
 }
 
 .main__categories--fantasy::before {
-    background-image: url(Assets/category_light_novels/Fantasy-background.jpg);
+    background-image: url(./Assets/category_light_novels/Fantasy-background.jpg);
 }
 
 .main__categories--romcom::before {
-    background-image: url(Assets/category_light_novels/Romcom-background.jpg);
+    background-image: url(./Assets/category_light_novels/Romcom-background.jpg);
 }
 
 .main__categories--action > *,
